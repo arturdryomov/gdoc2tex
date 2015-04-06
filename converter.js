@@ -7,6 +7,7 @@ function convertDocument() {
 
   formatDashes(documentBody)
   formatQuotes(documentBody)
+  formatPercentage(documentBody)
 
   DriveApp.createFile(formatName(documentName), documentBody.getText())
 }
@@ -62,6 +63,10 @@ function formatDashes(documentBody) {
 function formatQuotes(documentBody) {
   documentBody.replaceText("«", "<<")
   documentBody.replaceText("»", ">>")
+}
+
+function formatPercentage(documentBody) {
+  documentBody.replaceText("%", "\%")
 }
 
 function formatName(documentName) {

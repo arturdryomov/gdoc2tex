@@ -4,10 +4,11 @@ Dead simple Google Doc to TeX converter.
 
 Can do these things.
 
-* Format list items as `\item`.
-* Format headers as `\section`, `\subsection`, `\subsubsection`, `\paragraph` and `\subparagraph`.
-* Format dashes as `~---`.
-* Format quotes as `<<` and `>>`.
+* Headers → `\section`, `\subsection`, `\subsubsection`, `\paragraph` and `\subparagraph`.
+* List items → `\item`.
+* `—` → `~---`.
+* `« »` → `<< >>`.
+* `%` → `\%`.
 
 That’s all folks!
 
